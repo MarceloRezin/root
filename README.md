@@ -1,0 +1,2 @@
+# root
+Aplicativo
