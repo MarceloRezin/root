@@ -15,6 +15,24 @@
   </head>
   <body>
     <div ng-app="rootApp" ng-controller="indexCtrl">
+
+
+    <md-content>
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+
+            <h2 flex md-truncate>Root</h2>
+
+      
+          </div>
+        </md-toolbar>
+        <md-input-container>
+            <label>Valor</label>
+            <input type="text" name="input">
+          </md-input-container>
+      </md-content>
+
+
       <h3>Teste {{frase}}</h3>
       <md-button class="md-raised md-primary" ng-click="navigate()">
         Change State
