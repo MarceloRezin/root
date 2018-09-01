@@ -22,3 +22,11 @@ img.logo-toolbar {
     margin-left: 0%;
   }
  }
+
+ md-content.background {
+    background-image: url("/img/background.png");
+    background-size: length;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
