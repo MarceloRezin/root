@@ -32,8 +32,9 @@ app.config(function($mdThemingProvider) {
 app.controller('indexCtrl', ['$scope', '$state', function($scope, $state) {
 	$scope.imgSrc = '/img/root_logo.png';
 
-	$scope.navigate = function () {
-        $state.go('view1');
+	$scope.changeView = function (route) {
+        $state.go(route);
     };
 
+    $scope.changeView('index');
 }]);
