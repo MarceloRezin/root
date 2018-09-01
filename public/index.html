@@ -1,6 +1,6 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Root App</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
@@ -13,26 +13,28 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <script src="/index-controller.js"></script>
     <script src="/routes.js"></script>
-  </head>
-  <body>
-    <div ng-app="rootApp" ng-controller="indexCtrl">
-        <md-content>
-            <md-toolbar>
-              <div class="md-toolbar-tools" flex layout="row" layout-align-xs="center center" layout-align="start center">
-                  <img class="logo-toolbar" ng-src="{{imgSrc}}">
-              </div>
-            </md-toolbar>
-            <md-input-container>
-                <label>Valor</label>
-                <input type="text" name="input">
-            </md-input-container>
+</head>
+<body>
+    <div ng-app="rootApp" ng-controller="indexCtrl" flex layout-fill style="position: fixed; top: 0;">
+        <md-toolbar flex layout="row">
+            <div class="md-toolbar-tools" flex layout="row" layout-align-xs="center center" layout-align="start center">
+                <img class="logo-toolbar" ng-src="{{imgSrc}}">
+            </div>
+            <div style="margin-right: 5%;" flex layout="row"  layout-align="end center" hide-xs>
+                <md-button aria-label="Learn More">
+                    Empresa
+                </md-button>
+                <md-button aria-label="Learn More">
+                    Entrar
+                </md-button>
+                <md-button class="md-raised" aria-label="Learn More" ng-click="changeView('view1')">
+                    Cadastre-se
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-content class="background" flex layout="row" layout-align="center">
+            <div ui-view></div>
         </md-content>
-
-        <h3>Teste {{frase}}</h3>
-
-        <md-button class="md-raised md-primary" ng-click="navigate()">Change State</md-button>
-
-        <div ui-view></div>
     </div>
-  </body>
+</body>
 </html>
