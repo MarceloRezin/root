@@ -30,7 +30,7 @@ app.config(function($mdThemingProvider) {
 });
 
 app.controller('indexCtrl', ['$scope', '$state', function($scope, $state) {
-	$scope.frase = 'Ola mundo!';
+	$scope.imgSrc = '/img/root_logo.png';
 
 	$scope.navigate = function () {
         $state.go('view1');

@@ -8,36 +8,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.7.3/angular-resource.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
     <script src="//unpkg.com/@uirouter/angularjs@1.0.5/release/angular-ui-router.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <script src="/index-controller.js"></script>
     <script src="/routes.js"></script>
   </head>
   <body>
     <div ng-app="rootApp" ng-controller="indexCtrl">
+        <md-content>
+            <md-toolbar>
+              <div class="md-toolbar-tools" flex layout="row" layout-align-xs="center center" layout-align="start center">
+                  <img class="logo-toolbar" ng-src="{{imgSrc}}">
+              </div>
+            </md-toolbar>
+            <md-input-container>
+                <label>Valor</label>
+                <input type="text" name="input">
+            </md-input-container>
+        </md-content>
 
+        <h3>Teste {{frase}}</h3>
 
-    <md-content>
-        <md-toolbar>
-          <div class="md-toolbar-tools">
+        <md-button class="md-raised md-primary" ng-click="navigate()">Change State</md-button>
 
-            <h2 flex md-truncate>Root</h2>
-
-      
-          </div>
-        </md-toolbar>
-        <md-input-container>
-            <label>Valor</label>
-            <input type="text" name="input">
-          </md-input-container>
-      </md-content>
-
-
-      <h3>Teste {{frase}}</h3>
-      <md-button class="md-raised md-primary" ng-click="navigate()">
-        Change State
-      </md-button>
-      <div ui-view></div>
+        <div ui-view></div>
     </div>
   </body>
 </html>
