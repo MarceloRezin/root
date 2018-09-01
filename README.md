@@ -10,4 +10,4 @@ Tecnologias utilizadas: Servidor express.js e front-end com angularJs
 
 **Start**:
 
-Para iniciar o projeto entre no diretório app/ e execute o comando `node app.js`
+Para iniciar o projeto execute o comando `sh run.sh` na raiz do projeto
