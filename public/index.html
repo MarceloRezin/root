@@ -18,7 +18,7 @@
     <div ng-app="rootApp" ng-controller="indexCtrl" flex layout-fill style="position: fixed; top: 0;">
         <md-toolbar flex layout="row">
             <div class="md-toolbar-tools" flex layout="row" layout-align-xs="center center" layout-align="start center">
-                <img class="logo-toolbar" ng-src="{{imgSrc}}">
+                <img class="logo-toolbar" ng-src="{{imgSrc}}" ng-click="changeView('index')">
             </div>
             <div style="margin-right: 5%;" flex layout="row"  layout-align="end center" hide-xs>
                 <md-button aria-label="Learn More">
