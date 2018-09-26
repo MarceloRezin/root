@@ -30,3 +30,9 @@ img.logo-toolbar {
     background-position: center;
     background-repeat: no-repeat;
  }
+
+ div.form {
+  background: rgba(255,255,255, 0.8);
+  border-radius: 5px;
+ }
+
